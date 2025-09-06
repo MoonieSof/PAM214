@@ -26,10 +26,21 @@ public class PAM {
                         "17.Este reglamento entra en vigor después de que se firme o se acepte por la mayoría de los estudiantes asistentes a la primera sesión de la materia, una vez firmado o aceptado por el\r\n" + //
                         "50% más el jefe de grupo, es vigente para todo alumno inscrito en el curso aunque no esté presente en la primera sesión.");
        } 
+        public static void REGLAMENTOCLASSROOM(){
+
+            System.out.println ( " Política de uso aceptable de Google: no se puede usar para actividades ilegales, acoso, spam ni difusión de contenido inapropiado.\n" + //
+                                "\n" + //
+                                "Protección de datos: respeta la privacidad de alumnos y docentes; la escuela administra las cuentas.\n" + //
+                                "\n" + //
+                                "Acceso autorizado: solo usuarios con cuentas institucionales o invitaciones pueden entrar a una clase.\n" + //
+                                "\n" + //
+                                "Propiedad de contenido: lo que subes sigue siendo tuyo, pero autorizas a Google a alojarlo para fines de funcionamiento. " );
+        }
 
 public static void main (String [] args){
 
     PAM.REGLAMENTOPOO(); 
+    PAM.REGLAMENTOCLASSROOM();
 }
 
 }
