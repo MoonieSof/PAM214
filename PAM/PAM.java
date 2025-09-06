@@ -36,11 +36,25 @@ public class PAM {
                                 "\n" + //
                                 "Propiedad de contenido: lo que subes sigue siendo tuyo, pero autorizas a Google a alojarlo para fines de funcionamiento. " );
         }
+        
+        public static void FECHASDEPARCIALES(){
+
+            System.out.println ("1er Parcial: 01-10-25\r\n" + //
+                                "2do Parcial: 05-10-25\r\n" + //
+                                "3er Parcial: 03-12-25");
+        }
+         public static void PORCENTAJESPORPARCIAL() {
+              System.out.println (" Porcentajes 1er parcial: EVIDENCIA DE CONOCIMIENTO 40%, EVIDENCIA DE DESEMPEÑO 20%, EVIDENCIA DE PRODUCTO 30%, Proyecto integrador 10%.\n"+//
+                                "Porcentajes 2do parcial: EVIDENCIA DE CONOCIMIENTO 40%, EVIDENCIA DE DESEMPEÑO  20%, EVIDENCIA DE PRODUCTO 20%, PROYECTO INTEGRADOR 20%. \n" + //
+                                 "Porcentajes 3er parcial: EVIDENCIA DE CONOCIMIENTO 20, EVIDENCIA DE DESEMPEÑO 10%, EVIDENCIA DE PRODUCTO 40%, PROYECTO INTEGRADOR 30%");
+         }
 
 public static void main (String [] args){
 
     PAM.REGLAMENTOPOO(); 
     PAM.REGLAMENTOCLASSROOM();
+    PAM.FECHASDEPARCIALES();
+    PAM.PORCENTAJESPORPARCIAL();
 }
 
 }
