@@ -1,2 +1,9 @@
 
-console.log([1,2,3]);
+function add (n1, n2){
+
+    console.log (n1 + n2);
+}
+
+add(3,2)
+add (855, 756)
+add( 214, "itiid")
