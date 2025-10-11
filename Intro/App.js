@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+//1. imports : Zona de importaciones 
+import ContadorScreen from './screens/ContadorScreen'
 
-export default function App() {
+//2. Main : Zona de componentes
+export default function App() { 
+
   return (
-    <View style={styles.container}>
-      <Text>Hola mundo</Text>
-      <StatusBar style="auto" />
-    </View>
+
+    <ContadorScreen> </ContadorScreen>
+ 
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
