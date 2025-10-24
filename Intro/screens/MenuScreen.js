@@ -51,7 +51,7 @@ switch(screen){
 
         <Button onPress={()=>setScreen('contador')} title='Pract:Contador'/>
      <Button onPress={()=>setScreen('botones')} title='Pract:Buttons'/>
-     <Button onPress={()=>setScreen('texto')} title= 'Pract: Text & Alerts'/>
+     <Button onPress={()=>setScreen('Texto')} title= 'Pract: Text & Alerts'/>
      <Button onPress={()=>setScreen('imagen')} title= 'Pract: ImageBackground & SlapshScreen'/>
          <Button onPress={()=>setScreen('vista')} title= 'Pract: ScrollView'/>
        <Button onPress={()=>setScreen('act')} title= 'Pract: ActivityIndicator'/> 
