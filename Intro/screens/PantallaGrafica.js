@@ -4,7 +4,7 @@ import {Image}from 'react-native';
 
 
 
-export default function PantallaGrafica(){
+export default function Pantall(){
 
     return (
     <SafeAreaView style={styles.container}>
@@ -31,7 +31,7 @@ export default function PantallaGrafica(){
 
      <View style={styles.row1} >    
        <View style={styles.imagenPastel}> 
-          <Image source={require('../assets/graficas.png')}
+          <Image source={pastelI}
            style={styles.pastel}
            resizeMode="contain"
          />
