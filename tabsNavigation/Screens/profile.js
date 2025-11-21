@@ -1,15 +1,18 @@
-
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-
-export default function Profile() {
+export default function Profile({ navigation }) {
   return (
     <View style={styles.container}>
-      <View style={styles.iconRow}>
-        <Ionicons name="person-outline" size={28} color="green" />
-        <Text style={styles.title}>Perfil de usuario</Text>
-      </View>
+      <Ionicons name="person-outline" size={40} color="green" />
+      <Text style={styles.title}>Perfil de usuario</Text>
+
+      <Pressable 
+        style={styles.button}
+        onPress={() => navigation.navigate("Detalle")}
+      >
+        <Text style={styles.buttonText}>Detalles de usuario</Text>
+      </Pressable>
     </View>
   );
 }
@@ -17,21 +20,24 @@ export default function Profile() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
+    justifyContent: "center",
+    alignItems: "center"
   },
-
-  iconRow: {
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-
   title: {
-    fontSize: 22,
-    fontWeight: 'bold',
     marginTop: 10,
-    color: 'green',
+    fontSize: 22,
+    fontWeight: "bold",
+    color: "green"
   },
+  button: {
+    marginTop: 20,
+    backgroundColor: "#007Bff",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 10
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 16
+  }
 });

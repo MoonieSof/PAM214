@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <View style={styles.container}>
       <View style={styles.iconRow}>
-        <Ionicons name="settings-outline" size={28} color="green" />
+        <Ionicons name="settings-outline" size={28} color="blue" />
         <Text style={styles.title}>Configuraciones de usuario</Text>
       </View>
     </View>
@@ -30,6 +30,6 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     marginTop: 10,
-    color: 'green',
+    color: 'blue',
   },
 });
